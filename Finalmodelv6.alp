@@ -1,0 +1,5287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*************************************************
+	         AnyLogic Project File 
+*************************************************	         
+-->
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.8.2.202303221144" AlpVersion="8.7.7">
+<Model>
+	<Id>1682008703847</Id>
+	<Name><![CDATA[Finalmodelv6]]></Name>
+	<EngineVersion>6</EngineVersion>
+	<JavaPackageName><![CDATA[finalmodel]]></JavaPackageName>
+	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
+	<ActiveObjectClasses>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1682008703851</Id>
+			<Name><![CDATA[Main]]></Name>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1682008703862</Id>
+				<Name><![CDATA[1682008703862]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<SceneSkybox>null</SceneSkybox>
+			<AgentProperties>
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+				<PhysicalLength Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalLength>
+				<PhysicalWidth Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalWidth>
+				<PhysicalHeight Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalHeight>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682064000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1682008703856</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>20</X><Y>60</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<CurrentLevel>1682008703863</CurrentLevel>
+			<ConnectionsId>1682008703854</ConnectionsId>
+			<Variables>
+				<Variable Class="AuxVariable">
+					<Id>1682008826814</Id>
+					<Name><![CDATA[InnovationNetworkCoeffA]]></Name>
+					<Unit>%</Unit> 
+					<X>712</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826822</Id>
+					<Name><![CDATA[InnovationGenerationCoeffA]]></Name>
+					<Unit>%</Unit> 
+					<X>712</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826827</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffA]]></Name>
+					<Unit>%</Unit> 
+					<X>712</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826833</Id>
+					<Name><![CDATA[BroadInfluencesCoeffA]]></Name>
+					<Unit>%</Unit> 
+					<X>712</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826837</Id>
+					<Name><![CDATA[InnovationNetworkCoeffB]]></Name>
+					<Unit>%</Unit> 
+					<X>1012</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826879</Id>
+					<Name><![CDATA[InnovationGenerationCoeffB]]></Name>
+					<Unit>%</Unit> 
+					<X>1012</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826881</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffB]]></Name>
+					<Unit>%</Unit> 
+					<X>1012</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826883</Id>
+					<Name><![CDATA[BroadInfluencesCoeffB]]></Name>
+					<Unit>%</Unit> 
+					<X>1012</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826885</Id>
+					<Name><![CDATA[InnovationNetworkCoeffC]]></Name>
+					<Unit>%</Unit> 
+					<X>1322</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826887</Id>
+					<Name><![CDATA[InnovationGenerationCoeffC]]></Name>
+					<Unit>%</Unit> 
+					<X>1322</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826889</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffC]]></Name>
+					<Unit>%</Unit> 
+					<X>1322</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826891</Id>
+					<Name><![CDATA[BroadInfluencesCoeffC]]></Name>
+					<Unit>%</Unit> 
+					<X>1322</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826893</Id>
+					<Name><![CDATA[IdeaGenerationCoeff]]></Name>
+					<Unit>%</Unit> 
+					<X>682</X><Y>2966</Y>
+					<Label><X>10</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationNetworkCoeffA*InnovationGenerationCoeffA*InnovationLandscapeCoeffA*BroadInfluencesCoeffA]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826895</Id>
+					<Name><![CDATA[InitialInnovationCoeff]]></Name>
+					<Unit>%</Unit> 
+					<X>982</X><Y>2966</Y>
+					<Label><X>10</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationNetworkCoeffB*InnovationGenerationCoeffB*InnovationLandscapeCoeffB*BroadInfluencesCoeffB]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826897</Id>
+					<Name><![CDATA[WideAdoptionCoeff]]></Name>
+					<Unit>%</Unit> 
+					<X>1282</X><Y>2966</Y>
+					<Label><X>10</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationNetworkCoeffC*InnovationGenerationCoeffC*InnovationLandscapeCoeffC*BroadInfluencesCoeffC]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826899</Id>
+					<Name><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER]]></Name>
+					<X>1122</X><Y>3236</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoEqualityMULTIPLIERcopy]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826901</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy]]></Name>
+					<Description><![CDATA[1.051 ]]></Description>
+					<X>622</X><Y>3236</Y>
+					<Label><X>10</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIER]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682008826905</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityMULTIPLIERcopy]]></Name>
+					<Description><![CDATA[ 1.056]]></Description>
+					<X>1122</X><Y>3316</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoEqualityMULTIPLIER]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813984</Id>
+					<Name><![CDATA[Yearspassed]]></Name>
+					<X>920</X><Y>120</Y>
+					<Label><X>-50</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[time()]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813986</Id>
+					<Name><![CDATA[RDSpendingchangeXYEARSAGOPERCENT]]></Name>
+					<Description><![CDATA[delay(FactorchangePERCENT,DelayX,0)]]></Description>
+					<X>180</X><Y>1730</Y>
+					<Label><X>-135</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[delay(RDSpendingchangePERCENT,DelayX,0)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813988</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingXYEARSAGO]]></Name>
+					<X>890</X><Y>1770</Y>
+					<Label><X>-410</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientX*RDSpendingchangeXYEARSAGO]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813990</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingXYEARSAGOPERCENT]]></Name>
+					<X>910</X><Y>1830</Y>
+					<Label><X>-480</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[signum(InnovationchangeduetoRDSpendingXYEARSAGO) *(abs(InnovationchangeduetoRDSpendingXYEARSAGO)/abs(InitialvalueofInnovationduetoRDSpendingXYEARSAGO))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813992</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingPERCENT]]></Name>
+					<X>860</X><Y>1890</Y>
+					<Label><X>-380</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoRDSpendingXYEARSAGOPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813996</Id>
+					<Name><![CDATA[RDSpendingchangeXYEARSAGO]]></Name>
+					<Description><![CDATA[(FactorchangeXYEARSAGOPERCENT/100)*InitialvalueofFactorFIXED]]></Description>
+					<X>590</X><Y>1730</Y>
+					<Label><X>-145</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(RDSpendingchangeXYEARSAGOPERCENT/100)*InitialvalueofRDSpendingFIXED]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009813998</Id>
+					<Name><![CDATA[InitialvalueofInnovationduetoRDSpendingXYEARSAGO]]></Name>
+					<X>930</X><Y>1770</Y>
+					<Label><X>-10</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientX*InitialvalueofRDSpendingFIXED+InterceptX]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009814000</Id>
+					<Name><![CDATA[Currentvalueofinnovation]]></Name>
+					<Description><![CDATA[Assumption that rate of innovation is always positive]]></Description>
+					<X>2620</X><Y>1910</Y>
+					<Label><X>-215</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682009814002</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIER]]></Name>
+					<Description><![CDATA[=(SIGN(InnovationchangeduetoRDSpendingPERCENT)*ABS(InnovationchangeduetoRDSpendingPERCENT)*ABS(Currentvalueofinnovation)+Currentvalueofinnovation)/Currentvalueofinnovation]]></Description>
+					<X>860</X><Y>1920</Y>
+					<Label><X>-400</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(InnovationchangeduetoRDSpendingPERCENT*signum(Currentvalueofinnovation1))+1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074357</Id>
+					<Name><![CDATA[EqualitychangeZYEARSAGOPERCENT]]></Name>
+					<X>1540</X><Y>1730</Y>
+					<Label><X>-135</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[delay(EqualitychangePERCENT,DelayZ,0)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074359</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityZYEARSAGO]]></Name>
+					<X>2230</X><Y>1770</Y>
+					<Label><X>-360</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientZ*EqualitychangeZYEARSAGO]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074361</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityZYEARSAGOPERCENT]]></Name>
+					<X>2250</X><Y>1830</Y>
+					<Label><X>-440</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[signum(InnovationchangeduetoEqualityZYEARSAGO) *(abs(InnovationchangeduetoEqualityZYEARSAGO)/abs(InitialvalueofInnovationduetoEqualityZYEARSAGO))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074363</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityPERCENT]]></Name>
+					<X>2200</X><Y>1870</Y>
+					<Label><X>-340</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[InnovationchangeduetoEqualityZYEARSAGOPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074367</Id>
+					<Name><![CDATA[EqualitychangeZYEARSAGO]]></Name>
+					<X>1950</X><Y>1730</Y>
+					<Label><X>-145</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(EqualitychangeZYEARSAGOPERCENT/100)*InitialvalueofEqualityFIXED]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074369</Id>
+					<Name><![CDATA[InitialvalueofInnovationduetoEqualityZYEARSAGO]]></Name>
+					<X>2270</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientZ*InitialvalueofEqualityFIXED+InterceptZ]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682010074373</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityMULTIPLIER]]></Name>
+					<Description><![CDATA[=(SIGN(InnovationchangeduetoEqualityPERCENT)*ABS(InnovationchangeduetoEqualityPERCENT)*ABS(Currentvalueofinnovation)+Currentvalueofinnovation)/Currentvalueofinnovation]]></Description>
+					<X>2200</X><Y>1900</Y>
+					<Label><X>-360</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(InnovationchangeduetoEqualityPERCENT*signum(Currentvalueofinnovation))+1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682012707731</Id>
+					<Name><![CDATA[Currentvalueofinnovation1]]></Name>
+					<Description><![CDATA[Assumption that rate of innovation is always positive]]></Description>
+					<X>1260</X><Y>1910</Y>
+					<Label><X>-215</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512284</Id>
+					<Name><![CDATA[StabilitychangeAYEARSAGOPERCENT]]></Name>
+					<Description><![CDATA[delay(FactorchangePERCENT,DelayX,0)]]></Description>
+					<X>1280</X><Y>760</Y>
+					<Label><X>-280</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[delay(StabilitychangePERCENT,DelayA,0)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512290</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityAYEARSAGO]]></Name>
+					<X>1060</X><Y>900</Y>
+					<Label><X>-380</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientA*StabilitychangeAYEARSAGO]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512295</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityAYEARSAGOPERCENT]]></Name>
+					<X>1080</X><Y>960</Y>
+					<Label><X>-455</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[signum(RDSpendingchangeduetoStabilityAYEARSAGO) *(abs(RDSpendingchangeduetoStabilityAYEARSAGO)/abs(InitialvalueofRDSpendingduetoStabilityAYEARSAGO))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512301</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityPERCENT]]></Name>
+					<X>1080</X><Y>1000</Y>
+					<Label><X>-355</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[RDSpendingchangeduetoStabilityAYEARSAGOPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512315</Id>
+					<Name><![CDATA[StabilitychangeAYEARSAGO]]></Name>
+					<Description><![CDATA[(FactorchangeXYEARSAGOPERCENT/100)*InitialvalueofFactorFIXED]]></Description>
+					<X>1080</X><Y>800</Y>
+					<Label><X>-190</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(StabilitychangeAYEARSAGOPERCENT/100)*InitialvalueofStabilityFIXED]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512321</Id>
+					<Name><![CDATA[InitialvalueofRDSpendingduetoStabilityAYEARSAGO]]></Name>
+					<X>1100</X><Y>920</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientA*InitialvalueofStabilityFIXED+InterceptA]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512336</Id>
+					<Name><![CDATA[StabilitychangeBYEARSAGOPERCENT]]></Name>
+					<X>1480</X><Y>760</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[delay(StabilitychangePERCENT,DelayB,0)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512342</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityBYEARSAGO]]></Name>
+					<X>1700</X><Y>920</Y>
+					<Label><X>10</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientB*StabilitychangeBYEARSAGO]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512349</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityBYEARSAGOPERCENT]]></Name>
+					<X>1680</X><Y>960</Y>
+					<Label><X>20</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[signum(EqualitychangeduetoStabilityBYEARSAGO) *(abs(EqualitychangeduetoStabilityBYEARSAGO)/abs(InitialvalueofEqualityduetoStabilityBYEARSAGO))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512354</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityPERCENT]]></Name>
+					<X>1680</X><Y>1000</Y>
+					<Label><X>20</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[EqualitychangeduetoStabilityBYEARSAGOPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512367</Id>
+					<Name><![CDATA[StabilitychangeBYEARSAGO]]></Name>
+					<X>1680</X><Y>800</Y>
+					<Label><X>-20</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(StabilitychangeBYEARSAGOPERCENT/100)*InitialvalueofStabilityFIXED]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682495512374</Id>
+					<Name><![CDATA[InitialvalueofEqualityduetoStabilityBYEARSAGO]]></Name>
+					<X>1660</X><Y>900</Y>
+					<Label><X>-385</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[GradientB*InitialvalueofStabilityFIXED+InterceptB]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682521128205</Id>
+					<Name><![CDATA[EqualitychangePERCENT]]></Name>
+					<X>1590</X><Y>1630</Y>
+					<Label><X>-60</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[EqualitychangeduetoStabilityPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1682521141138</Id>
+					<Name><![CDATA[RDSpendingchangePERCENT]]></Name>
+					<X>230</X><Y>1630</Y>
+					<Label><X>-65</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[RDSpendingchangeduetoStabilityPERCENT]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color/>
+					</Properties>
+
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1682008826907</Id>
+					<Name><![CDATA[AdvancedUnappliedIdea]]></Name>
+					<X>832</X><Y>2796</Y>
+					<Label><X>-95</X><Y>-60</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>custom</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<Expression><![CDATA[delay((ExistingKnowledgePotential*IdeaGeneration),Baseinnovationrate)-delay((AdvancedUnappliedIdea*InitialInnovation),Baseinnovationrate)]]></Expression>
+						<InitialValue><![CDATA[Initial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1682008826909</Id>
+					<Name><![CDATA[AdvancedUnadoptedProduct]]></Name>
+					<X>1122</X><Y>2796</Y>
+					<Label><X>-105</X><Y>-60</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>custom</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<Expression><![CDATA[delay((AdvancedUnappliedIdea*InitialInnovation),Baseinnovationrate)-delay((AdvancedUnadoptedProduct*WideAdoption),Baseinnovationrate)]]></Expression>
+						<InitialValue><![CDATA[Initial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1682008826911</Id>
+					<Name><![CDATA[AdvancedAdoptedProduct]]></Name>
+					<Unit></Unit> 
+					<X>1402</X><Y>2796</Y>
+					<Label><X>-95</X><Y>-60</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>custom</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<Expression><![CDATA[delay((AdvancedUnadoptedProduct*WideAdoption),Baseinnovationrate)]]></Expression>
+						<InitialValue><![CDATA[0]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1682008826913</Id>
+					<Name><![CDATA[ExistingKnowledgePotential]]></Name>
+					<Description><![CDATA[+Baseinnovationratio*(delay((ExistingKnowledgePotential*IdeaGeneration),Baseinnovationrate)-delay((AdvancedUnappliedIdea*InitialInnovation),Baseinnovationrate))+Baseinnovationratio*(delay((AdvancedUnappliedIdea*InitialInnovation),Baseinnovationrate)-delay((AdvancedUnadoptedProduct*WideAdoption),Baseinnovationrate))]]></Description>
+					<X>542</X><Y>2796</Y>
+					<Label><X>-95</X><Y>-60</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>custom</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<Expression><![CDATA[-delay((ExistingKnowledgePotential*IdeaGeneration),Baseinnovationrate)+delay((AdvancedUnadoptedProduct*WideAdoption),Baseinnovationrate)+Baseinnovationratio*(AdvancedUnappliedIdea+AdvancedUnadoptedProduct)]]></Expression>
+						<InitialValue><![CDATA[Initial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1682008826664</Id>
+					<Name><![CDATA[IdeaGeneration]]></Name>
+					<X>542</X><Y>2796</Y>
+					<Label><X>-70</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties SourceId="1682008826913" TargetId="1682008826907" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[Baseinnovationratio*IdeaGenerationCoeff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>140</X><Y>0</Y></Point>
+							<Point><X>290</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1682008826669</Id>
+					<Name><![CDATA[InitialInnovation]]></Name>
+					<X>832</X><Y>2796</Y>
+					<Label><X>-65</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties SourceId="1682008826907" TargetId="1682008826909" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[Baseinnovationratio*InitialInnovationCoeff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>150</X><Y>0</Y></Point>
+							<Point><X>290</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1682008826674</Id>
+					<Name><![CDATA[WideAdoption]]></Name>
+					<Unit></Unit> 
+					<X>1122</X><Y>2796</Y>
+					<Label><X>-65</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties SourceId="1682008826909" TargetId="1682008826911" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[Baseinnovationratio*WideAdoptionCoeff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>160</X><Y>0</Y></Point>
+							<Point><X>280</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682008826801</Id>
+					<Name><![CDATA[Initial]]></Name>
+					<Description><![CDATA[100%]]></Description>
+					<X>502</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682008826799</Id>
+							<Label><![CDATA[]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>SEPARATOR</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682008826804</Id>
+					<Name><![CDATA[Baseinnovationratio]]></Name>
+					<Description><![CDATA[Ratio of ideas that make it from one innovation stage to the next]]></Description>
+					<X>432</X><Y>2876</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.05]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682008826802</Id>
+							<Label><![CDATA[]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>SEPARATOR</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682008826809</Id>
+					<Name><![CDATA[Baseinnovationrate]]></Name>
+					<Description><![CDATA[Speed of ideas travelling from one stage to the next (units: years per stage)]]></Description>
+					<X>432</X><Y>2896</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[1]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682008826807</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682009813961</Id>
+					<Name><![CDATA[InitialvalueofRDSpendingFIXED]]></Name>
+					<X>550</X><Y>1630</Y>
+					<Label><X>-130</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.13]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682009813959</Id>
+							<Label><![CDATA[InitialvalueofRDSpendingFIXED]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682009813964</Id>
+					<Name><![CDATA[DelayX]]></Name>
+					<X>810</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682009813962</Id>
+							<Label><![CDATA[DelayX]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682009813973</Id>
+					<Name><![CDATA[InterceptX]]></Name>
+					<X>1020</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[-7.4]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682009813971</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682009813979</Id>
+					<Name><![CDATA[GradientX]]></Name>
+					<X>1240</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[110]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682009813977</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682010074332</Id>
+					<Name><![CDATA[InitialvalueofEqualityFIXED]]></Name>
+					<X>1910</X><Y>1630</Y>
+					<Label><X>-130</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[38]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682010074330</Id>
+							<Label><![CDATA[InitialvalueofEqualityFIXED]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682010074335</Id>
+					<Name><![CDATA[DelayZ]]></Name>
+					<X>2170</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[6]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682010074333</Id>
+							<Label><![CDATA[DelayZ]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682010074344</Id>
+					<Name><![CDATA[InterceptZ]]></Name>
+					<X>2380</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[-5.7]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682010074342</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682010074350</Id>
+					<Name><![CDATA[GradientZ]]></Name>
+					<X>2600</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.34]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682010074348</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512140</Id>
+					<Name><![CDATA[InitialvalueofStabilityFIXED]]></Name>
+					<X>1380</X><Y>820</Y>
+					<Label><X>-100</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[46.3]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512138</Id>
+							<Label><![CDATA[InitialvalueofRDSpendingFIXED]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512153</Id>
+					<Name><![CDATA[DelayA]]></Name>
+					<X>470</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[9]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512151</Id>
+							<Label><![CDATA[DelayX]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512187</Id>
+					<Name><![CDATA[InterceptA]]></Name>
+					<X>680</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[-0.50]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512185</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512204</Id>
+					<Name><![CDATA[GradientA]]></Name>
+					<X>900</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.017]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512202</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512252</Id>
+					<Name><![CDATA[DelayB]]></Name>
+					<X>1870</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[4]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512250</Id>
+							<Label><![CDATA[DelayZ]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512260</Id>
+					<Name><![CDATA[StabilitychangePERCENT]]></Name>
+					<X>1380</X><Y>700</Y>
+					<Label><X>-90</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512258</Id>
+							<Label><![CDATA[]]></Label>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512268</Id>
+					<Name><![CDATA[InterceptB]]></Name>
+					<X>2080</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[-27]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512266</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1682495512276</Id>
+					<Name><![CDATA[GradientB]]></Name>
+					<X>2300</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.82]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1682495512274</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
+			<Dependences>
+				<Link SourceId="1682008826827" TargetId="1682008826893" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-110</Y></Direction>
+					<Id>1682008826682</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffA - IdeaGenerationCoeff]]></Name>
+					<X>712</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826833" TargetId="1682008826893" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-130</Y></Direction>
+					<Id>1682008826684</Id>
+					<Name><![CDATA[BroadInfluencesCoeffA - IdeaGenerationCoeff]]></Name>
+					<X>712</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826822" TargetId="1682008826893" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-90</Y></Direction>
+					<Id>1682008826686</Id>
+					<Name><![CDATA[InnovationGenerationCoeffA - IdeaGenerationCoeff]]></Name>
+					<X>712</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826814" TargetId="1682008826893" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-70</Y></Direction>
+					<Id>1682008826690</Id>
+					<Name><![CDATA[InnovationNetworkCoeffA - IdeaGenerationCoeff]]></Name>
+					<X>712</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826879" TargetId="1682008826895" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-90</Y></Direction>
+					<Id>1682008826692</Id>
+					<Name><![CDATA[InnovationGenerationCoeffB - InitialInnovationCoeff]]></Name>
+					<X>1012</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826883" TargetId="1682008826895" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-130</Y></Direction>
+					<Id>1682008826694</Id>
+					<Name><![CDATA[BroadInfluencesCoeffB - InitialInnovationCoeff]]></Name>
+					<X>1012</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826837" TargetId="1682008826895" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-70</Y></Direction>
+					<Id>1682008826698</Id>
+					<Name><![CDATA[InnovationNetworkCoeffB - InitialInnovationCoeff]]></Name>
+					<X>1012</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826881" TargetId="1682008826895" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-110</Y></Direction>
+					<Id>1682008826701</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffB - InitialInnovationCoeff]]></Name>
+					<X>1012</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826887" TargetId="1682008826897" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-40</X><Y>-90</Y></Direction>
+					<Id>1682008826705</Id>
+					<Name><![CDATA[InnovationGenerationCoeffC - WideAdoptionCoeff]]></Name>
+					<X>1322</X><Y>3056</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826885" TargetId="1682008826897" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-40</X><Y>-70</Y></Direction>
+					<Id>1682008826709</Id>
+					<Name><![CDATA[InnovationNetworkCoeffC - WideAdoptionCoeff]]></Name>
+					<X>1322</X><Y>3036</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826889" TargetId="1682008826897" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-40</X><Y>-110</Y></Direction>
+					<Id>1682008826713</Id>
+					<Name><![CDATA[InnovationLandscapeCoeffC - WideAdoptionCoeff]]></Name>
+					<X>1322</X><Y>3076</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826891" TargetId="1682008826897" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-40</X><Y>-130</Y></Direction>
+					<Id>1682008826717</Id>
+					<Name><![CDATA[BroadInfluencesCoeffC - WideAdoptionCoeff]]></Name>
+					<X>1322</X><Y>3096</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826893" TargetId="1682008826664" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-170</Y></Direction>
+					<Id>1682008826719</Id>
+					<Name><![CDATA[IdeaGenerationCoeff - IdeaGeneration]]></Name>
+					<X>682</X><Y>2966</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826895" TargetId="1682008826669" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-170</Y></Direction>
+					<Id>1682008826723</Id>
+					<Name><![CDATA[InitialInnovationCoeff - InitialInnovation]]></Name>
+					<X>982</X><Y>2966</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826897" TargetId="1682008826674" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-170</Y></Direction>
+					<Id>1682008826727</Id>
+					<Name><![CDATA[WideAdoptionCoeff - WideAdoption]]></Name>
+					<X>1282</X><Y>2966</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826905" TargetId="1682008826899" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-80</Y></Direction>
+					<Id>1682008826735</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityMULTIPLIERcopy - InnovationchangeduetoFinancialFactorsMULTIPLIER]]></Name>
+					<X>1122</X><Y>3316</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826899" TargetId="1682008826883" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-110</X><Y>-140</Y></Direction>
+					<Id>1682008826737</Id>
+					<Name><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER - BroadInfluencesCoeffB]]></Name>
+					<X>1122</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826901" TargetId="1682008826879" Polarity="null">
+					<Height>-54.43</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>390</X><Y>-180</Y></Direction>
+					<Id>1682008826740</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy - InnovationGenerationCoeffB]]></Name>
+					<X>622</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826901" TargetId="1682008826822" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>90</X><Y>-180</Y></Direction>
+					<Id>1682008826743</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy - InnovationGenerationCoeffA]]></Name>
+					<X>622</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826899" TargetId="1682008826891" Polarity="null">
+					<Height>-34.38</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>200</X><Y>-140</Y></Direction>
+					<Id>1682008826747</Id>
+					<Name><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER - BroadInfluencesCoeffC]]></Name>
+					<X>1122</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826899" TargetId="1682008826833" Polarity="null">
+					<Height>53.303</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-410</X><Y>-140</Y></Direction>
+					<Id>1682008826752</Id>
+					<Name><![CDATA[InnovationchangeduetoFinancialFactorsMULTIPLIER - BroadInfluencesCoeffA]]></Name>
+					<X>1122</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826901" TargetId="1682008826887" Polarity="null">
+					<Height>-68.97</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>700</X><Y>-180</Y></Direction>
+					<Id>1682008826757</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIERcopy - InnovationGenerationCoeffC]]></Name>
+					<X>622</X><Y>3236</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826804" TargetId="1682008826664" Polarity="null">
+					<Height>-11.443</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>250</X><Y>-80</Y></Direction>
+					<Id>1682008826761</Id>
+					<Name><![CDATA[Baseinnovationratio - IdeaGeneration]]></Name>
+					<X>432</X><Y>2876</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>15132410</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826804" TargetId="1682008826669" Polarity="null">
+					<Height>-44.197</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>550</X><Y>-80</Y></Direction>
+					<Id>1682008826765</Id>
+					<Name><![CDATA[Baseinnovationratio - InitialInnovation]]></Name>
+					<X>432</X><Y>2876</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826804" TargetId="1682008826674" Polarity="null">
+					<Height>-95.858</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>850</X><Y>-80</Y></Direction>
+					<Id>1682008826769</Id>
+					<Name><![CDATA[Baseinnovationratio - WideAdoption]]></Name>
+					<X>432</X><Y>2876</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826909" TargetId="1682008826911" Polarity="null">
+					<Height>47.054</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>280</X><Y>0</Y></Direction>
+					<Id>1682008826773</Id>
+					<Name><![CDATA[AdvancedUnadoptedProduct - AdvancedAdoptedProduct]]></Name>
+					<X>1122</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826809" TargetId="1682008826911" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>970</X><Y>-100</Y></Direction>
+					<Id>1682008826778</Id>
+					<Name><![CDATA[Baseinnovationrate - AdvancedAdoptedProduct]]></Name>
+					<X>432</X><Y>2896</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826809" TargetId="1682008826907" Polarity="null">
+					<Height>-41.082</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>400</X><Y>-100</Y></Direction>
+					<Id>1682008826782</Id>
+					<Name><![CDATA[Baseinnovationrate - AdvancedUnappliedIdea]]></Name>
+					<X>432</X><Y>2896</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826913" TargetId="1682008826907" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>290</X><Y>0</Y></Direction>
+					<Id>1682008826784</Id>
+					<Name><![CDATA[ExistingKnowledgePotential - AdvancedUnappliedIdea]]></Name>
+					<X>542</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826809" TargetId="1682008826909" Polarity="null">
+					<Height>-69.306</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>690</X><Y>-100</Y></Direction>
+					<Id>1682008826790</Id>
+					<Name><![CDATA[Baseinnovationrate - AdvancedUnadoptedProduct]]></Name>
+					<X>432</X><Y>2896</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826907" TargetId="1682008826909" Polarity="null">
+					<Height>44.048</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>290</X><Y>0</Y></Direction>
+					<Id>1682008826794</Id>
+					<Name><![CDATA[AdvancedUnappliedIdea - AdvancedUnadoptedProduct]]></Name>
+					<X>832</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826809" TargetId="1682008826913" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>110</X><Y>-100</Y></Direction>
+					<Id>1682008826798</Id>
+					<Name><![CDATA[Baseinnovationrate - ExistingKnowledgePotential]]></Name>
+					<X>432</X><Y>2896</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813964" TargetId="1682009813986" Polarity="null">
+					<Height>138.01</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-630</X><Y>110</Y></Direction>
+					<Id>1682009813928</Id>
+					<Name><![CDATA[DelayX - RDSpendingchangeXYEARSAGOPERCENT]]></Name>
+					<X>810</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682521141138" TargetId="1682009813986" Polarity="null">
+					<Height>-20.413</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>100</Y></Direction>
+					<Id>1682009813930</Id>
+					<Name><![CDATA[RDSpendingchangePERCENT - RDSpendingchangeXYEARSAGOPERCENT]]></Name>
+					<X>230</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>true</Delay>
+				</Link>
+				<Link SourceId="1682009813988" TargetId="1682009813990" Polarity="null">
+					<Height>6.028</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>20</X><Y>60</Y></Direction>
+					<Id>1682009813932</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingXYEARSAGO - InnovationchangeduetoRDSpendingXYEARSAGOPERCENT]]></Name>
+					<X>890</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813996" TargetId="1682009813988" Polarity="null">
+					<Height>24.677</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>300</X><Y>40</Y></Direction>
+					<Id>1682009813938</Id>
+					<Name><![CDATA[RDSpendingchangeXYEARSAGO - InnovationchangeduetoRDSpendingXYEARSAGO]]></Name>
+					<X>590</X><Y>1730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813961" TargetId="1682009813996" Polarity="null">
+					<Height>13.434</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>100</Y></Direction>
+					<Id>1682009813940</Id>
+					<Name><![CDATA[InitialvalueofRDSpendingFIXED - RDSpendingchangeXYEARSAGO]]></Name>
+					<X>550</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813986" TargetId="1682009813996" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>410</X><Y>0</Y></Direction>
+					<Id>1682009813942</Id>
+					<Name><![CDATA[RDSpendingchangeXYEARSAGOPERCENT - RDSpendingchangeXYEARSAGO]]></Name>
+					<X>180</X><Y>1730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813998" TargetId="1682009813990" Polarity="null">
+					<Height>-7.169</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>60</Y></Direction>
+					<Id>1682009813944</Id>
+					<Name><![CDATA[InitialvalueofInnovationduetoRDSpendingXYEARSAGO - InnovationchangeduetoRDSpendingXYEARSAGOPERCENT]]></Name>
+					<X>930</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813961" TargetId="1682009813998" Polarity="null">
+					<Height>58.648</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>380</X><Y>140</Y></Direction>
+					<Id>1682009813946</Id>
+					<Name><![CDATA[InitialvalueofRDSpendingFIXED - InitialvalueofInnovationduetoRDSpendingXYEARSAGO]]></Name>
+					<X>550</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813979" TargetId="1682009813998" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-310</X><Y>150</Y></Direction>
+					<Id>1682009813948</Id>
+					<Name><![CDATA[GradientX - InitialvalueofInnovationduetoRDSpendingXYEARSAGO]]></Name>
+					<X>1240</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813979" TargetId="1682009813988" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-350</X><Y>150</Y></Direction>
+					<Id>1682009813950</Id>
+					<Name><![CDATA[GradientX - InnovationchangeduetoRDSpendingXYEARSAGO]]></Name>
+					<X>1240</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813973" TargetId="1682009813998" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-90</X><Y>150</Y></Direction>
+					<Id>1682009813952</Id>
+					<Name><![CDATA[InterceptX - InitialvalueofInnovationduetoRDSpendingXYEARSAGO]]></Name>
+					<X>1020</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813990" TargetId="1682009813992" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>60</Y></Direction>
+					<Id>1682009813954</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingXYEARSAGOPERCENT - InnovationchangeduetoRDSpendingPERCENT]]></Name>
+					<X>910</X><Y>1830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009813992" TargetId="1682009814002" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>30</Y></Direction>
+					<Id>1682009813956</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingPERCENT - InnovationchangeduetoRDSpendingMULTIPLIER]]></Name>
+					<X>860</X><Y>1890</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682012707731" TargetId="1682009814002" Polarity="null">
+					<Height>-58.296</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-400</X><Y>10</Y></Direction>
+					<Id>1682009813958</Id>
+					<Name><![CDATA[Currentvalueofinnovation1 - InnovationchangeduetoRDSpendingMULTIPLIER]]></Name>
+					<X>1260</X><Y>1910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074335" TargetId="1682010074357" Polarity="null">
+					<Height>138.01</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-630</X><Y>110</Y></Direction>
+					<Id>1682010074299</Id>
+					<Name><![CDATA[DelayZ - EqualitychangeZYEARSAGOPERCENT]]></Name>
+					<X>2170</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682521128205" TargetId="1682010074357" Polarity="null">
+					<Height>-20.413</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>100</Y></Direction>
+					<Id>1682010074301</Id>
+					<Name><![CDATA[EqualitychangePERCENT - EqualitychangeZYEARSAGOPERCENT]]></Name>
+					<X>1590</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>true</Delay>
+				</Link>
+				<Link SourceId="1682010074359" TargetId="1682010074361" Polarity="null">
+					<Height>6.028</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>20</X><Y>60</Y></Direction>
+					<Id>1682010074303</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityZYEARSAGO - InnovationchangeduetoEqualityZYEARSAGOPERCENT]]></Name>
+					<X>2230</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074367" TargetId="1682010074359" Polarity="null">
+					<Height>24.677</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>280</X><Y>40</Y></Direction>
+					<Id>1682010074309</Id>
+					<Name><![CDATA[EqualitychangeZYEARSAGO - InnovationchangeduetoEqualityZYEARSAGO]]></Name>
+					<X>1950</X><Y>1730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074332" TargetId="1682010074367" Polarity="null">
+					<Height>13.434</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>100</Y></Direction>
+					<Id>1682010074311</Id>
+					<Name><![CDATA[InitialvalueofEqualityFIXED - EqualitychangeZYEARSAGO]]></Name>
+					<X>1910</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074357" TargetId="1682010074367" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>410</X><Y>0</Y></Direction>
+					<Id>1682010074313</Id>
+					<Name><![CDATA[EqualitychangeZYEARSAGOPERCENT - EqualitychangeZYEARSAGO]]></Name>
+					<X>1540</X><Y>1730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074369" TargetId="1682010074361" Polarity="null">
+					<Height>-7.169</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>60</Y></Direction>
+					<Id>1682010074315</Id>
+					<Name><![CDATA[InitialvalueofInnovationduetoEqualityZYEARSAGO - InnovationchangeduetoEqualityZYEARSAGOPERCENT]]></Name>
+					<X>2270</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074332" TargetId="1682010074369" Polarity="null">
+					<Height>58.648</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>360</X><Y>140</Y></Direction>
+					<Id>1682010074317</Id>
+					<Name><![CDATA[InitialvalueofEqualityFIXED - InitialvalueofInnovationduetoEqualityZYEARSAGO]]></Name>
+					<X>1910</X><Y>1630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074350" TargetId="1682010074369" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-330</X><Y>150</Y></Direction>
+					<Id>1682010074319</Id>
+					<Name><![CDATA[GradientZ - InitialvalueofInnovationduetoEqualityZYEARSAGO]]></Name>
+					<X>2600</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074350" TargetId="1682010074359" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-370</X><Y>150</Y></Direction>
+					<Id>1682010074321</Id>
+					<Name><![CDATA[GradientZ - InnovationchangeduetoEqualityZYEARSAGO]]></Name>
+					<X>2600</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074344" TargetId="1682010074369" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-110</X><Y>150</Y></Direction>
+					<Id>1682010074323</Id>
+					<Name><![CDATA[InterceptZ - InitialvalueofInnovationduetoEqualityZYEARSAGO]]></Name>
+					<X>2380</X><Y>1620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074361" TargetId="1682010074363" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>40</Y></Direction>
+					<Id>1682010074325</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityZYEARSAGOPERCENT - InnovationchangeduetoEqualityPERCENT]]></Name>
+					<X>2250</X><Y>1830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074363" TargetId="1682010074373" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>30</Y></Direction>
+					<Id>1682010074327</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityPERCENT - InnovationchangeduetoEqualityMULTIPLIER]]></Name>
+					<X>2200</X><Y>1870</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009814000" TargetId="1682010074373" Polarity="null">
+					<Height>-54.079</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-420</X><Y>-10</Y></Direction>
+					<Id>1682010074329</Id>
+					<Name><![CDATA[Currentvalueofinnovation - InnovationchangeduetoEqualityMULTIPLIER]]></Name>
+					<X>2620</X><Y>1910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682009814002" TargetId="1682008826901" Polarity="null">
+					<Height>229.921</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-238</X><Y>1316</Y></Direction>
+					<Id>1682011221118</Id>
+					<Name><![CDATA[InnovationchangeduetoRDSpendingMULTIPLIER - InnovationchangeduetoRDSpendingMULTIPLIERcopy]]></Name>
+					<X>860</X><Y>1920</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682010074373" TargetId="1682008826905" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-1078</X><Y>1416</Y></Direction>
+					<Id>1682011233631</Id>
+					<Name><![CDATA[InnovationchangeduetoEqualityMULTIPLIER - InnovationchangeduetoEqualityMULTIPLIERcopy]]></Name>
+					<X>2200</X><Y>1900</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826801" TargetId="1682008826907" Polarity="null">
+					<Height>45.562</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>330</X><Y>0</Y></Direction>
+					<Id>1682443890398</Id>
+					<Name><![CDATA[Initial - AdvancedUnappliedIdea]]></Name>
+					<X>502</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826801" TargetId="1682008826909" Polarity="null">
+					<Height>-53.001</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>620</X><Y>0</Y></Direction>
+					<Id>1682443909802</Id>
+					<Name><![CDATA[Initial - AdvancedUnadoptedProduct]]></Name>
+					<X>502</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826911" Polarity="null">
+					<Height>106.014</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-852</X><Y>14</Y></Direction>
+					<Id>1682445351797</Id>
+					<Name><![CDATA[AdvancedAdoptedProduct - ]]></Name>
+					<X>1402</X><Y>2796</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-5192482</Color>
+					<LineWidth>4</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826909" Polarity="null">
+					<Height>66.003</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-572</X><Y>14</Y></Direction>
+					<Id>1682445387199</Id>
+					<Name><![CDATA[AdvancedUnadoptedProduct - ]]></Name>
+					<X>1122</X><Y>2796</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-5192482</Color>
+					<LineWidth>4</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826907" Polarity="null">
+					<Height>38.027</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-282</X><Y>14</Y></Direction>
+					<Id>1682445406741</Id>
+					<Name><![CDATA[AdvancedUnappliedIdea - ]]></Name>
+					<X>832</X><Y>2796</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-5192482</Color>
+					<LineWidth>4</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512153" TargetId="1682495512284" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>810</X><Y>-90</Y></Direction>
+					<Id>1682495512025</Id>
+					<Name><![CDATA[DelayA - StabilitychangeAYEARSAGOPERCENT]]></Name>
+					<X>470</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512260" TargetId="1682495512284" Polarity="null">
+					<Height>12.581</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-100</X><Y>60</Y></Direction>
+					<Id>1682495512030</Id>
+					<Name><![CDATA[StabilitychangePERCENT - StabilitychangeAYEARSAGOPERCENT]]></Name>
+					<X>1380</X><Y>700</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>true</Delay>
+				</Link>
+				<Link SourceId="1682495512290" TargetId="1682495512295" Polarity="null">
+					<Height>-5.034</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>20</X><Y>60</Y></Direction>
+					<Id>1682495512032</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityAYEARSAGO - RDSpendingchangeduetoStabilityAYEARSAGOPERCENT]]></Name>
+					<X>1060</X><Y>900</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512315" TargetId="1682495512290" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>100</Y></Direction>
+					<Id>1682495512043</Id>
+					<Name><![CDATA[StabilitychangeAYEARSAGO - RDSpendingchangeduetoStabilityAYEARSAGO]]></Name>
+					<X>1080</X><Y>800</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512140" TargetId="1682495512315" Polarity="null">
+					<Height>8.166</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-300</X><Y>-20</Y></Direction>
+					<Id>1682495512045</Id>
+					<Name><![CDATA[InitialvalueofStabilityFIXED - StabilitychangeAYEARSAGO]]></Name>
+					<X>1380</X><Y>820</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512284" TargetId="1682495512315" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-200</X><Y>40</Y></Direction>
+					<Id>1682495512048</Id>
+					<Name><![CDATA[StabilitychangeAYEARSAGOPERCENT - StabilitychangeAYEARSAGO]]></Name>
+					<X>1280</X><Y>760</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512321" TargetId="1682495512295" Polarity="null">
+					<Height>3.965</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>40</Y></Direction>
+					<Id>1682495512051</Id>
+					<Name><![CDATA[InitialvalueofRDSpendingduetoStabilityAYEARSAGO - RDSpendingchangeduetoStabilityAYEARSAGOPERCENT]]></Name>
+					<X>1100</X><Y>920</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512140" TargetId="1682495512321" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-280</X><Y>100</Y></Direction>
+					<Id>1682495512053</Id>
+					<Name><![CDATA[InitialvalueofStabilityFIXED - InitialvalueofRDSpendingduetoStabilityAYEARSAGO]]></Name>
+					<X>1380</X><Y>820</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512204" TargetId="1682495512321" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>200</X><Y>70</Y></Direction>
+					<Id>1682495512057</Id>
+					<Name><![CDATA[GradientA - InitialvalueofRDSpendingduetoStabilityAYEARSAGO]]></Name>
+					<X>900</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512204" TargetId="1682495512290" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>160</X><Y>50</Y></Direction>
+					<Id>1682495512061</Id>
+					<Name><![CDATA[GradientA - RDSpendingchangeduetoStabilityAYEARSAGO]]></Name>
+					<X>900</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512295" TargetId="1682495512301" Polarity="null">
+					<Height>13.239</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>40</Y></Direction>
+					<Id>1682495512069</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityAYEARSAGOPERCENT - RDSpendingchangeduetoStabilityPERCENT]]></Name>
+					<X>1080</X><Y>960</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512252" TargetId="1682495512336" Polarity="null">
+					<Height>115.594</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-390</X><Y>-90</Y></Direction>
+					<Id>1682495512081</Id>
+					<Name><![CDATA[DelayB - StabilitychangeBYEARSAGOPERCENT]]></Name>
+					<X>1870</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512260" TargetId="1682495512336" Polarity="null">
+					<Height>-13.495</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>60</Y></Direction>
+					<Id>1682495512084</Id>
+					<Name><![CDATA[StabilitychangePERCENT - StabilitychangeBYEARSAGOPERCENT]]></Name>
+					<X>1380</X><Y>700</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>true</Delay>
+				</Link>
+				<Link SourceId="1682495512342" TargetId="1682495512349" Polarity="null">
+					<Height>8.425</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>40</Y></Direction>
+					<Id>1682495512087</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityBYEARSAGO - EqualitychangeduetoStabilityBYEARSAGOPERCENT]]></Name>
+					<X>1700</X><Y>920</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512367" TargetId="1682495512342" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>20</X><Y>120</Y></Direction>
+					<Id>1682495512095</Id>
+					<Name><![CDATA[StabilitychangeBYEARSAGO - EqualitychangeduetoStabilityBYEARSAGO]]></Name>
+					<X>1680</X><Y>800</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512336" TargetId="1682495512367" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>200</X><Y>40</Y></Direction>
+					<Id>1682495512103</Id>
+					<Name><![CDATA[StabilitychangeBYEARSAGOPERCENT - StabilitychangeBYEARSAGO]]></Name>
+					<X>1480</X><Y>760</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512374" TargetId="1682495512349" Polarity="null">
+					<Height>-7.169</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>20</X><Y>60</Y></Direction>
+					<Id>1682495512107</Id>
+					<Name><![CDATA[InitialvalueofEqualityduetoStabilityBYEARSAGO - EqualitychangeduetoStabilityBYEARSAGOPERCENT]]></Name>
+					<X>1660</X><Y>900</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512276" TargetId="1682495512374" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-640</X><Y>50</Y></Direction>
+					<Id>1682495512112</Id>
+					<Name><![CDATA[GradientB - InitialvalueofEqualityduetoStabilityBYEARSAGO]]></Name>
+					<X>2300</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512276" TargetId="1682495512342" Polarity="null">
+					<Height>16.247</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-600</X><Y>70</Y></Direction>
+					<Id>1682495512115</Id>
+					<Name><![CDATA[GradientB - EqualitychangeduetoStabilityBYEARSAGO]]></Name>
+					<X>2300</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512268" TargetId="1682495512374" Polarity="null">
+					<Height>-16.038</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-420</X><Y>50</Y></Direction>
+					<Id>1682495512122</Id>
+					<Name><![CDATA[InterceptB - InitialvalueofEqualityduetoStabilityBYEARSAGO]]></Name>
+					<X>2080</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512349" TargetId="1682495512354" Polarity="null">
+					<Height>11.758</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>40</Y></Direction>
+					<Id>1682495512127</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityBYEARSAGOPERCENT - EqualitychangeduetoStabilityPERCENT]]></Name>
+					<X>1680</X><Y>960</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512140" TargetId="1682495512367" Polarity="null">
+					<Height>-8.188</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>300</X><Y>-20</Y></Direction>
+					<Id>1682496978750</Id>
+					<Name><![CDATA[InitialvalueofStabilityFIXED - StabilitychangeBYEARSAGO]]></Name>
+					<X>1380</X><Y>820</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512140" TargetId="1682495512374" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>280</X><Y>80</Y></Direction>
+					<Id>1682498034800</Id>
+					<Name><![CDATA[InitialvalueofStabilityFIXED - InitialvalueofEqualityduetoStabilityBYEARSAGO]]></Name>
+					<X>1380</X><Y>820</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512354" TargetId="1682521128205" Polarity="null">
+					<Height>-41.271</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-90</X><Y>630</Y></Direction>
+					<Id>1682521266347</Id>
+					<Name><![CDATA[EqualitychangeduetoStabilityPERCENT - EqualitychangePERCENT]]></Name>
+					<X>1680</X><Y>1000</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>2</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512301" TargetId="1682521141138" Polarity="null">
+					<Height>-63.254</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-850</X><Y>630</Y></Direction>
+					<Id>1682521272854</Id>
+					<Name><![CDATA[RDSpendingchangeduetoStabilityPERCENT - RDSpendingchangePERCENT]]></Name>
+					<X>1080</X><Y>1000</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>2</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682495512187" TargetId="1682495512321" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>420</X><Y>70</Y></Direction>
+					<Id>1682708581179</Id>
+					<Name><![CDATA[InterceptA - InitialvalueofRDSpendingduetoStabilityAYEARSAGO]]></Name>
+					<X>680</X><Y>850</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826804" TargetId="1682008826913" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>110</X><Y>-80</Y></Direction>
+					<Id>1682779145155</Id>
+					<Name><![CDATA[Baseinnovationratio - ExistingKnowledgePotential]]></Name>
+					<X>432</X><Y>2876</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826674" TargetId="1682008826913" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-740</X><Y>0</Y></Direction>
+					<Id>1682799034791</Id>
+					<Name><![CDATA[WideAdoption - ExistingKnowledgePotential]]></Name>
+					<X>1282</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826801" TargetId="1682008826913" Polarity="null">
+					<Height>0.5</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>0</Y></Direction>
+					<Id>1682799684129</Id>
+					<Name><![CDATA[Initial - ExistingKnowledgePotential]]></Name>
+					<X>502</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1644806</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826907" TargetId="1682008826913" Polarity="null">
+					<Height>0.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-290</X><Y>0</Y></Direction>
+					<Id>1682799752920</Id>
+					<Name><![CDATA[AdvancedUnappliedIdea - ExistingKnowledgePotential]]></Name>
+					<X>832</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1682008826909" TargetId="1682008826913" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-580</X><Y>0</Y></Direction>
+					<Id>1682799754865</Id>
+					<Name><![CDATA[AdvancedUnadoptedProduct - ExistingKnowledgePotential]]></Name>
+					<X>1122</X><Y>2796</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-1</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+			</Dependences>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1682008703854</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>60</X><Y>-20</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+			<Presentation>
+				<Level>
+					<Id>1682008703863</Id>
+					<Name><![CDATA[level]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+
+			<Presentation>
+				<Rectangle>
+					<Id>1682495511987</Id>
+					<Name><![CDATA[rectangle19]]></Name>
+					<X>360</X><Y>700</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>2120</Width>
+					<Height>320</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1682008826561</Id>
+					<Name><![CDATA[rectangle1]]></Name>
+					<X>1566.234</X><Y>2531.364</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>8</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>810.430275819012</Width>
+					<Height>625.000473372781</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-2572328</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1682008826570</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>410</X><Y>2536</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1110</Width>
+					<Height>404</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1644806</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682008826574</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>542</X><Y>2546</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Existing Knowledge
+Potential]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826577</Id>
+					<Name><![CDATA[text1]]></Name>
+					<X>832</X><Y>2546</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Advanced Unapplied
+Ideas]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826580</Id>
+					<Name><![CDATA[text2]]></Name>
+					<X>1132</X><Y>2546</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Advanced Unadopted
+Product]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826584</Id>
+					<Name><![CDATA[text3]]></Name>
+					<X>1422</X><Y>2546</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Advanced Adopted
+Product]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Control Type="EditBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1682008826635</Id>
+					<Name><![CDATA[editbox]]></Name>
+					<X>442</X><Y>2966</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="50" Height="20">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LinkTo>true</LinkTo>
+						<Link>Baseinnovationratio</Link>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1682008826639</Id>
+					<Name><![CDATA[text4]]></Name>
+					<X>682</X><Y>2766</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Idea Generation]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Control Type="EditBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1682008826644</Id>
+					<Name><![CDATA[editbox1]]></Name>
+					<X>442</X><Y>2996</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="50" Height="20">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LinkTo>true</LinkTo>
+						<Link>Baseinnovationrate</Link>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1682008826648</Id>
+					<Name><![CDATA[text5]]></Name>
+					<X>572</X><Y>2966</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Base Innovation Ratio]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826650</Id>
+					<Name><![CDATA[text6]]></Name>
+					<X>572</X><Y>2996</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Base Innovation Rate]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826653</Id>
+					<Name><![CDATA[text7]]></Name>
+					<X>982</X><Y>2766</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Initial Innovation]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826657</Id>
+					<Name><![CDATA[text8]]></Name>
+					<X>1281</X><Y>2766</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Wide Adoption]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1682008826661</Id>
+					<Name><![CDATA[text9]]></Name>
+					<X>380</X><Y>2980</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INPUTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682009813882</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>40</X><Y>1560</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1320</Width>
+					<Height>380</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1682009813890</Id>
+					<Name><![CDATA[rectangle3]]></Name>
+					<X>110</X><Y>1590</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>620</Width>
+					<Height>60</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1436248595</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682009813892</Id>
+					<Name><![CDATA[text12]]></Name>
+					<X>50</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INPUTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682009813894</Id>
+					<Name><![CDATA[text13]]></Name>
+					<X>740</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[LAGS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682009813896</Id>
+					<Name><![CDATA[text14]]></Name>
+					<X>600</X><Y>1040</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[% Change in R&D Spending due to Stability]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>36</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682009813898</Id>
+					<Name><![CDATA[text15]]></Name>
+					<X>600</X><Y>2020</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[% Change in Innovation due to R&D Spending]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>36</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682009813918</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>790</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>100</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682009813920</Id>
+					<Name><![CDATA[text16]]></Name>
+					<X>900</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INTERCEPTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682009813922</Id>
+					<Name><![CDATA[rectangle5]]></Name>
+					<X>1000</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682009813924</Id>
+					<Name><![CDATA[text17]]></Name>
+					<X>1130</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[GRADIENTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682009813926</Id>
+					<Name><![CDATA[rectangle6]]></Name>
+					<X>1220</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1682010074261</Id>
+					<Name><![CDATA[rectangle7]]></Name>
+					<X>1400</X><Y>1560</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>1320</Width>
+					<Height>380</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1682010074269</Id>
+					<Name><![CDATA[rectangle8]]></Name>
+					<X>1470</X><Y>1590</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>620</Width>
+					<Height>60</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1433420657</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682010074271</Id>
+					<Name><![CDATA[text20]]></Name>
+					<X>1410</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INPUTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682010074273</Id>
+					<Name><![CDATA[text21]]></Name>
+					<X>2100</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[LAGS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682010074275</Id>
+					<Name><![CDATA[text22]]></Name>
+					<X>1460</X><Y>1040</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[% Change in Economic Equality due to Stability]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>36</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682010074277</Id>
+					<Name><![CDATA[text23]]></Name>
+					<X>1440</X><Y>2020</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[% Change in Innovation due to Economic Equality]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>36</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Image>
+					<Id>1682010074279</Id>
+					<Name><![CDATA[image1]]></Name>
+					<X>2400</X><Y>2060</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>90.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+				<Rectangle>
+					<Id>1682010074289</Id>
+					<Name><![CDATA[rectangle9]]></Name>
+					<X>2150</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>100</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682010074291</Id>
+					<Name><![CDATA[text24]]></Name>
+					<X>2260</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INTERCEPTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682010074293</Id>
+					<Name><![CDATA[rectangle10]]></Name>
+					<X>2360</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682010074295</Id>
+					<Name><![CDATA[text25]]></Name>
+					<X>2490</X><Y>1610</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[GRADIENTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682010074297</Id>
+					<Name><![CDATA[rectangle11]]></Name>
+					<X>2580</X><Y>1600</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+    			<TimePlot>
+					<Id>1682012058343</Id>
+					<Name><![CDATA[ChangeRD]]></Name>
+					<X>600</X><Y>1060</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682064000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>680</Width>
+					<Height>403.75</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>600</Width>
+						<Height>303.75</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>40</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[-100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[100]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[R&D Spending due to Stability (% Change from Original Value)]]></Title>
+					<Id>1682012291748</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-10185235</Color>
+					<Expression2><![CDATA[RDSpendingchangeduetoStabilityPERCENT*100]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>8.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682058746422</Id>
+					<Name><![CDATA[plot6]]></Name>
+					<X>1480</X><Y>1060</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682064000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>709.091</Width>
+					<Height>400</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>629.091</Width>
+						<Height>290</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>50</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[-100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[100]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Economic Equality due to Stability (% Change from Original Value)]]></Title>
+					<Id>1682058851649</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-7357297</Color>
+					<Expression2><![CDATA[EqualitychangeduetoStabilityPERCENT*100]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>8.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682059558466</Id>
+					<Name><![CDATA[plot2]]></Name>
+					<X>980</X><Y>2560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682064000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>220</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>160</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>false</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[150]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Advanced Unadopted Product]]></Title>
+					<Id>1682059559881</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-29696</Color>
+					<Expression2><![CDATA[AdvancedUnadoptedProduct]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682443803008</Id>
+					<Name><![CDATA[plot1]]></Name>
+					<X>1270</X><Y>2560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682496000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>220</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>160</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>false</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[150]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Advanced Adopted Product]]></Title>
+					<Id>1682443803927</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[AdvancedAdoptedProduct]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682444414821</Id>
+					<Name><![CDATA[plot3]]></Name>
+					<X>1560</X><Y>2520</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682496000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>810.430275819012</Width>
+					<Height>620</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>730.430275819012</Width>
+						<Height>533.9389349112425</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>26.06106508875746</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[300]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Advanced Adopted Product]]></Title>
+					<Id>1682444415625</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[AdvancedAdoptedProduct]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>6.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Advanced Unadopted Product]]></Title>
+					<Id>1682444460290</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-29696</Color>
+					<Expression2><![CDATA[AdvancedUnadoptedProduct]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>6.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Advanced Unapplied Idea]]></Title>
+					<Id>1682444479911</Id>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-47872</Color>
+					<Expression2><![CDATA[AdvancedUnappliedIdea]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>6.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Existing Knowledge Potential]]></Title>
+					<Id>1682444482526</Id>
+					<Expression><![CDATA[my_dataset3]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[ExistingKnowledgePotential]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>6.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682444669858</Id>
+					<Name><![CDATA[plot5]]></Name>
+					<X>400</X><Y>2560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682496000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>220</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>160</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>false</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[300]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Title]]></Title>
+					<Id>1682444671020</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-2354116</Color>
+					<Expression2><![CDATA[ExistingKnowledgePotential]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682444731350</Id>
+					<Name><![CDATA[plot8]]></Name>
+					<X>690</X><Y>2560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682496000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>220</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>160</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>false</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[200]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Title]]></Title>
+					<Id>1682444732684</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-47872</Color>
+					<Expression2><![CDATA[AdvancedUnappliedIdea]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>4.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+				<Text>
+					<Id>1682495511771</Id>
+					<Name><![CDATA[text26]]></Name>
+					<X>790</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[GRADIENTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682495511820</Id>
+					<Name><![CDATA[rectangle12]]></Name>
+					<X>450</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>100</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495511830</Id>
+					<Name><![CDATA[text27]]></Name>
+					<X>400</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[LAGS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<RoundedRectangle>
+					<Id>1682495511836</Id>
+					<Name><![CDATA[roundRectangle2]]></Name>
+					<X>1200</X><Y>540</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>360</Width>
+					<Height>100</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1430208320</FillColor>
+					<FillMaterial>null</FillMaterial>
+					<ArcRadius>10</ArcRadius>
+				</RoundedRectangle>
+				<Text>
+					<Id>1682495511846</Id>
+					<Name><![CDATA[text28]]></Name>
+					<X>1580</X><Y>560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Assuming that the initial Stability
+level has been consistent for the past 
+A years (where A>B). ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682495511854</Id>
+					<Name><![CDATA[rectangle15]]></Name>
+					<X>2060</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495511865</Id>
+					<Name><![CDATA[text30]]></Name>
+					<X>1800</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[LAGS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682495511871</Id>
+					<Name><![CDATA[rectangle16]]></Name>
+					<X>1850</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>100</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495511902</Id>
+					<Name><![CDATA[text34]]></Name>
+					<X>1200</X><Y>780</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INPUT:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1682495511908</Id>
+					<Name><![CDATA[text35]]></Name>
+					<X>1140</X><Y>60</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[% Change in Stability]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>48</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+    			<TimePlot>
+					<Id>1682495511917</Id>
+					<Name><![CDATA[ChangeRD1]]></Name>
+					<X>1020</X><Y>100</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682064000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>720</Width>
+					<Height>420</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>640</Width>
+						<Height>360</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>40</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>false</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[-100]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[100]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Stability (% Change from Original Value)]]></Title>
+					<Id>1682495511914</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-16777216</Color>
+					<Expression2><![CDATA[StabilitychangePERCENT]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>8.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+				<Text>
+					<Id>1682495511926</Id>
+					<Name><![CDATA[text37]]></Name>
+					<X>2190</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[GRADIENTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682495511930</Id>
+					<Name><![CDATA[rectangle17]]></Name>
+					<X>2280</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10510688</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495511934</Id>
+					<Name><![CDATA[text38]]></Name>
+					<X>1960</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INTERCEPTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682495511937</Id>
+					<Name><![CDATA[rectangle18]]></Name>
+					<X>880</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495511953</Id>
+					<Name><![CDATA[text40]]></Name>
+					<X>1380</X><Y>560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[(% Change from Original Value)]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>17</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Control Type="Slider">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1682495511981</Id>
+					<Name><![CDATA[slider3]]></Name>
+					<X>1220</X><Y>560</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="320" Height="90">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>HORIZONTAL</Orientation>
+						<MinValue><![CDATA[-90]]></MinValue>
+						<MaxValue><![CDATA[90]]></MaxValue>
+						<LinkTo>true</LinkTo>
+						<Link>StabilitychangePERCENT</Link>
+					</ExtendedProperties>
+				</Control>
+				<Rectangle>
+					<Id>1682495512000</Id>
+					<Name><![CDATA[rectangle20]]></Name>
+					<X>660</X><Y>830</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>120</Width>
+					<Height>40</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-10185235</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682495512017</Id>
+					<Name><![CDATA[text41]]></Name>
+					<X>560</X><Y>840</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-4565549</Color>
+					<Text><![CDATA[INTERCEPTS:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682496474518</Id>
+					<Name><![CDATA[rectangle22]]></Name>
+					<X>1260</X><Y>780</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>240</Width>
+					<Height>60</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1430208320</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1682497332957</Id>
+					<Name><![CDATA[text18]]></Name>
+					<X>1200</X><Y>2440</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Innovation Process]]></Text>
+					<Font>
+						<Name>Arial</Name>
+						<Size>48</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1682500961562</Id>
+					<Name><![CDATA[rectangle21]]></Name>
+					<X>980</X><Y>40</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>8</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>800</Width>
+					<Height>620</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor/>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Image>
+					<Id>1682501785868</Id>
+					<Name><![CDATA[image8]]></Name>
+					<X>1940</X><Y>460</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>60.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+				<Rectangle>
+					<Id>1682501877135</Id>
+					<Name><![CDATA[rectangle23]]></Name>
+					<X>360</X><Y>2420</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>8</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>2080</Width>
+					<Height>960</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor/>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+    			<TimePlot>
+					<Id>1682520877594</Id>
+					<Name><![CDATA[plot7]]></Name>
+					<X>600</X><Y>2040</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682582400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>680</Width>
+					<Height>300</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>600</Width>
+						<Height>210</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Innovation due to R&D Spending (% Change from Original Value)]]></Title>
+					<Id>1682520879313</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-8355712</Color>
+					<Expression2><![CDATA[InnovationchangeduetoRDSpendingPERCENT*100]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>8.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1682521635832</Id>
+					<Name><![CDATA[plot]]></Name>
+					<X>1480</X><Y>2040</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1682582400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>700</Width>
+					<Height>320</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>620</Width>
+						<Height>230</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Innovation due to Economic Equality (% Change from Original Value)]]></Title>
+					<Id>1682521636776</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-8355712</Color>
+					<Expression2><![CDATA[InnovationchangeduetoEqualityPERCENT*100]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>8.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[20]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+				<Image>
+					<Id>1682708109500</Id>
+					<Name><![CDATA[image9]]></Name>
+					<X>2360</X><Y>1140</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>90.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+				<Image>
+					<Id>1682708171931</Id>
+					<Name><![CDATA[image2]]></Name>
+					<X>560</X><Y>2060</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>90.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+				<Image>
+					<Id>1682708175649</Id>
+					<Name><![CDATA[image3]]></Name>
+					<X>560</X><Y>1140</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>90.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+				<Image>
+					<Id>1682708192549</Id>
+					<Name><![CDATA[image10]]></Name>
+					<X>940</X><Y>530</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Width>200</Width>
+					<Height>133.333</Height>
+					<Rotation>120.0</Rotation>
+					<ImageFiles>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+						<ImageResourceReference>
+							<PackageName><![CDATA[finalmodel]]></PackageName>
+							<ClassName><![CDATA[1020882.png]]></ClassName>
+						</ImageResourceReference>
+					</ImageFiles>
+					<OriginalSize>false</OriginalSize>
+				</Image>
+			</Presentation>
+
+				</Level>
+			</Presentation>
+
+		</ActiveObjectClass>
+	</ActiveObjectClasses>	
+	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
+	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
+	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
+	<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
+	<FixedTimeStep>0.001</FixedTimeStep>
+	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
+	<TimeAccuracy>1.0E-5</TimeAccuracy>
+	<Frame>
+		<Width>2760</Width>
+		<Height>3480</Height>
+	</Frame>
+	<Database>
+		<Logging>false</Logging>
+		<AutoExport>false</AutoExport>
+		<ShutdownCompact>false</ShutdownCompact>
+		<ImportSettings>
+		</ImportSettings>
+		<ExportSettings>
+		</ExportSettings>
+	</Database>
+	
+	<RunConfiguration ActiveObjectClassId="1682008703851">
+		<Id>1682008703881</Id>
+		<Name><![CDATA[RunConfiguration]]></Name>
+		<MaximumMemory>512</MaximumMemory>
+		<ModelTimeProperties>
+			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<InitialDate><![CDATA[1681948800000]]></InitialDate>	
+			<InitialTime><![CDATA[0.0]]></InitialTime>	
+			<FinalDate><![CDATA[1684540800000]]></FinalDate>	
+			<FinalTime><![CDATA[100.0]]></FinalTime>	
+		</ModelTimeProperties>
+		<AnimationProperties>
+			<StopNever>true</StopNever>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<RealTimeScale>1.0</RealTimeScale>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<EnableDeveloperPanel>false</EnableDeveloperPanel>
+			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+		</AnimationProperties>
+		<Inputs>		
+		</Inputs>
+		<Outputs>
+		</Outputs>
+	</RunConfiguration>
+	<Experiments>	
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1682008703851">
+			<Id>1682008703878</Id>
+			<Name><![CDATA[Simulation]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1682008703880</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Finalmodel]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[Initial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Baseinnovationratio]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Baseinnovationrate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialvalueofRDSpendingFIXED]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[DelayX]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InterceptX]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GradientX]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialvalueofEqualityFIXED]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[DelayZ]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InterceptZ]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GradientZ]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InitialvalueofStabilityFIXED]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[DelayA]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InterceptA]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GradientA]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[DelayB]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[StabilitychangePERCENT]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[InterceptB]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[GradientB]]></ParameterName>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[Finalmodel : Simulation]]></Title>	
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Never]]></StopOption>
+				<InitialDate><![CDATA[1681948800000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1684540800000]]></FinalDate>	
+				<FinalTime><![CDATA[100.0]]></FinalTime>	
+			</ModelTimeProperties>
+			<BypassInitialScreen>true</BypassInitialScreen>
+		</SimulationExperiment>	
+	</Experiments>
+	<ModelResources>
+		<Resource>
+			<Path><![CDATA[1020882.png]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		</Resource>
+	</ModelResources>
+    <RequiredLibraryReference>
+		<LibraryName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></LibraryName>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionBuild>0</VersionBuild>
+    </RequiredLibraryReference>
+</Model>
+</AnyLogicWorkspace>
