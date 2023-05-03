@@ -16,4 +16,4 @@ Results:
 Each MATLAB code has its own results database, where the results have been recorded and processed (with the exception of the National Direct results - this code was simple enough to view all results from the output of the code).
 
 Model:
-The indirect, national relationship has been modelled (including both parts). Note image '1020882' is an image required by the model (though it will run without it).
+The indirect, national relationship has been modelled (including both parts) in file 'Stability and Innovation Model'. Note file '1020882' is an image file required by the model (though it will run without it).
